@@ -1,0 +1,9 @@
+<h1>Posts</h1>
+
+<% @posts.each do |post| %>
+	<%= post.title %><br>
+	<%= post.desc %><br>
+	===================<br>
+	<%= link_to "Edit this post",edit_post_path(post),  class: "btn btn-block btn-mobile btn-primary" %>
+	<%= button_to "delete", post, :method => :delete %>						
+<% end %>

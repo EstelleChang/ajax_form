@@ -1,0 +1,8 @@
+<h1>Posts#show</h1>
+<p>Find me in app/views/posts/show.html.erb</p>
+
+<%= @post.title %>
+<%= @post.desc %>
+
+<%= link_to "Edit this post",edit_post_path(@post),  class: "btn btn-block btn-mobile btn-primary" %>
+<%= button_to "delete", @post, :method => :delete %>	
